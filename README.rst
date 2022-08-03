@@ -13,3 +13,9 @@
 3. Run `poe dev` to start the development environment. This should automatically re-run after you make any code changes.
 
 ## Contributing
+
+1. Run `git pull` from the `development` branch and do a `git checkout -b {my_branch_name}` to open a local side branch.
+2. Commit (e.g. `git add` and `git commit`) all your work in that side branch.
+3. Run `git push` after completing work in the side branch.
+4. Open a pull request (for the `development` branch) on Github. Your code will be reviewed and subject to changes.
+5. Once your pull request is approved, please merge your branch to `development`

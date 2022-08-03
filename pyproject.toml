@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "trade-bot"
+version = "0.1.0"
+description = ""
+authors = ["Angelo Aldecoa <angelokn14@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+sanic = "^22.6.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+poethepoet = "^0.16.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poe.tasks]
+dev = "sanic server.app --dev"

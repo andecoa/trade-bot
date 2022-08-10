@@ -1,7 +1,9 @@
-# Trade Bot
+=========
+Trade Bot
+=========
 
-
-## Setup
+Setup
+======
 
 **Requirements:**
 - Python 3.8 >
@@ -13,7 +15,8 @@
 3. Run `pre-commit install` to set up your pre-commit hooks.
 4. Run `poe dev` to start the development environment. This should automatically re-run after you make any code changes.
 
-## Contributing
+Contributing
+============
 
 1. Run `git pull` from the `development` branch and do a `git checkout -b {my_branch_name}` to open a local side branch.
 2. Commit (e.g. `git add` and `git commit`) all your work in that side branch.

@@ -1,6 +1,7 @@
 import requests
 import time
 
+
 def getMarketData(symbol: str):
     """Returns the price for a given symbol"""
     x = requests.get(
@@ -8,8 +9,7 @@ def getMarketData(symbol: str):
         params={"symbol": symbol, "token": "cbsjggaad3i9sd7nbvp0"},
     )
 
-    return float(x.text.split(",")[0][5:])
-
-while True:
-    print(getMarketData("GME"))
-    time.sleep(60)
+    if x.status_code == 200:
+        return float(x.text.split(",")[0][5:])
+    else:
+        return None
